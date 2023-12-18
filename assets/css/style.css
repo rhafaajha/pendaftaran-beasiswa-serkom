@@ -1,0 +1,311 @@
+:root {
+  scroll-behavior: smooth;
+  font-family: 'Inter', sans-serif;
+  background: var(--ABU-MUDA, #f8f8f8);
+}
+
+html.scroll-smooth,
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  font-family: 'Inter', sans-serif;
+  background: var(--ABU-MUDA, #f8f8f8);
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/* ==========================
+           CARD 
+============================= */
+.card {
+  margin: 0;
+  border: none;
+  border-radius: 15px;
+  background: var(--PUTIH, #fff);
+  box-shadow: 0px 0px 25px 15px rgba(0, 0, 0, 0.07);
+}
+
+.card img {
+  max-height: 200px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.card-header,
+.card-footer {
+  border-color: #ebeef4;
+  background-color: #fff;
+  color: #798eb3;
+  padding: 20px;
+}
+
+.card-title {
+  color: var(--HITAM, #000);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 36px;
+}
+
+.card-title.hasil {
+  color: var(--Colour-3, #248afd);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.card-title span {
+  color: var(--Colour-6, #8c909a);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.card .button a {
+  display: flex;
+  width: 215px;
+  padding: 10px 15px;
+  justify-content: space-between;
+  border-radius: 5px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.card .button ion-icon {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+}
+
+/*--------------------------------------------------------------
+                          MAIN
+--------------------------------------------------------------*/
+#main {
+  margin-top: 64px;
+  transition: all 1s;
+}
+
+.pagetitle {
+  margin-bottom: 50px;
+}
+
+.pagetitle h1 {
+  color: var(--HITAM, #000);
+  text-align: center;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+section {
+  padding: 60px;
+  transition: all 1s;
+}
+
+section.manfaat {
+  background: var(--ABU-GELAP-02, #25282b);
+}
+
+section.manfaat h1,
+section.manfaat p {
+  color: var(--PUTIH, #fff);
+}
+
+section.manfaat .img-manfaat {
+  display: flex;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100px;
+  background: var(--KUNING, #ffc98e);
+  width: max-content;
+  height: max-content;
+}
+
+section.manfaat .col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+section.manfaat .img-manfaat ion-icon {
+  color: var(--HITAM, #000);
+  width: 75px;
+  height: 75px;
+}
+
+#barChart,
+#pieChart {
+  max-height: 400px;
+}
+
+.btn:disabled,
+.form-control:disabled,
+.form-select:disabled,
+.btn.disabled,
+.form-control.disabled,
+.form-select.disabled {
+  cursor: not-allowed;
+  cursor: no-drop;
+}
+
+/* ==========================
+          Table 
+ ============================ */
+.table {
+  font-size: 16px;
+}
+
+.table td:hover {
+  cursor: pointer;
+}
+
+section .table thead th,
+#dataNomor,
+#dataNope,
+#dataSmt,
+#dataIPK,
+#dataPilih,
+#dataBerkas,
+#noData,
+#dataStatus {
+  text-align: center;
+  vertical-align: middle;
+}
+
+section .table tbody tr td {
+  vertical-align: middle;
+}
+
+.hasil .dataTable-top {
+  padding: 0 0 10px 0;
+}
+
+.hasil .dataTable-bottom {
+  padding: 10px 0 0 0;
+}
+
+/* ----------------------------- 
+            HEADER 
+-------------------------------- */
+header {
+  transition: all 1s;
+  height: 64px;
+  width: 100%;
+  left: 0px;
+  top: 0px;
+  position: fixed;
+  z-index: 997;
+  padding: 10px 50px;
+  background: var(--HITAM, #000);
+  box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.15);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .nav-item .nav-link {
+  color: var(--PUTIH, #fff);
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  line-height: normal;
+  list-style: none;
+  margin: 0;
+  text-decoration: none;
+}
+
+header .nav-item .nav-link:hover,
+header .nav-item .nav-link.active {
+  color: var(--PUTIH, #fff);
+  text-decoration-line: underline;
+  font-weight: 600;
+}
+
+header .navbar-nav {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 50px;
+}
+
+@media (max-width: 1000px) {
+  header .navbar-toggler {
+    background-color: var(--PUTIH, #fff);
+    right: 60px;
+    position: fixed;
+  }
+}
+
+@media (min-width: 1000px) {
+  .logo img {
+    max-height: 60px;
+  }
+
+  header .navbar-nav {
+    position: fixed;
+    right: 50px;
+  }
+}
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+.footer {
+  padding: 20px 0;
+  font-size: 14px;
+  transition: all 1s;
+  background: var(--HITAM, #000);
+  box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.15);
+}
+
+.footer .copyright {
+  color: var(--PUTIH, #fff);
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  line-height: normal;
+}
+
+/*--------------------------------------------------------------
+# Back to top button
+--------------------------------------------------------------*/
+#backToTopBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: var(--PUTIH, #fff);
+  color: var(--HITAM, #000);
+  box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.15);
+  border: none;
+  border-radius: 5px;
+  padding: 10px 13px;
+  transition: all 0.4s;
+}
+
+#backToTopBtn:hover {
+  background-color: #555;
+}
